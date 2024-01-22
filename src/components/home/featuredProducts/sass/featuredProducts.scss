@@ -1,0 +1,80 @@
+@import "../../../../sass/var";
+
+.FeaturedProducts {
+  min-width: 400px;
+
+  width: 100%;
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    font-family: $font2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: $mainColor;
+    border-bottom: 2px solid $mainColor;
+    border-radius: 5px;
+    button {
+      font-family: $font1;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: 2px solid $mainColor;
+      background-color: transparent;
+      border-radius: 5px;
+      display: flex;
+      color: $mainColor;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s ease;
+      color: $mainColor;
+      &:hover {
+        background-color: $mainColor;
+        color: white;
+      }
+    }
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .FeaturedProducts {
+    header {
+      h1 {
+        font-size: 23px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  .FeaturedProducts {
+    header {
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .FeaturedProducts {
+    header {
+      h1 {
+        font-size: 17px;
+      }
+    }
+  }
+}

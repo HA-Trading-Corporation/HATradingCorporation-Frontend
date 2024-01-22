@@ -1,0 +1,405 @@
+.admin-panel {
+  min-width: 400px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 30px 20px;
+}
+.admin-panel .sidebar {
+  width: 200px;
+  background-color: #01034e;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.admin-panel .sidebar .icon {
+  margin-right: 5px;
+}
+.admin-panel .sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 5px;
+}
+.admin-panel .sidebar a:hover {
+  background-color: #001f7f;
+}
+.admin-panel .main-content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.admin-panel .main-content header {
+  background-color: #01034e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  border-radius: 5px;
+}
+.admin-panel .main-content header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-panel .main-content header h1 .icon {
+  margin-right: 15px;
+}
+.admin-panel .main-content section {
+  margin-top: 20px;
+}
+.admin-panel .main-content section h2 {
+  margin-top: 0;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #01034e;
+}
+.admin-panel .main-content section p {
+  margin-top: 10px;
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.admin-panel .main-content .tools-nav {
+  width: 100%;
+  height: calc(-moz-fit-content + 8px);
+  height: calc(fit-content + 8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-family: "Rubik", sans-serif;
+}
+.admin-panel .main-content .tools-nav .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-panel .main-content .tools-nav .icons .search-box {
+  display: flex;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.admin-panel .main-content .tools-nav .icons .search-box input {
+  width: 83%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #01034e;
+}
+.admin-panel .main-content .tools-nav .icons .search-box button {
+  width: 17%;
+  background-color: #01034e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 0px 5px 5px 0px;
+  font-family: "Rubik", sans-serif;
+}
+.admin-panel .main-content .tools-nav .icons .search-box button:hover {
+  background-color: #001f7f;
+}
+.admin-panel .main-content .tools-nav .icons .icon {
+  margin: 0 10px;
+  font-size: large;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #01034e;
+  transition: 0.2s ease;
+}
+.admin-panel .main-content .tools-nav .icons .icon:hover {
+  background-color: #01034e;
+  color: white;
+}
+.admin-panel .main-content .products-listing {
+  width: 100%;
+  height: 100%;
+}
+.admin-panel .main-content .products-listing h3 {
+  font-family: "Rubik", sans-serif;
+  color: #01034e;
+  padding: 0 10px;
+  margin-bottom: 8px;
+}
+.admin-panel .main-content .products-listing .product {
+  width: 100%;
+  height: calc(-moz-fit-content + 10px);
+  height: calc(fit-content + 10px);
+  border: 2px solid #01034e;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 2px grey;
+  padding: 10px;
+  color: #01034e;
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+}
+.admin-panel .main-content .products-listing .product pre {
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+}
+.admin-panel .main-content .products-listing .product .icons {
+  position: relative;
+  z-index: 2;
+}
+.admin-panel .main-content .products-listing .product .icons .icon {
+  margin: 0 2px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  padding: 8px;
+  border-radius: 5px;
+}
+.admin-panel .main-content .products-listing .product .icons .icon:hover {
+  background-color: #01034e;
+  color: white;
+}
+.admin-panel .main-content .not-found {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-panel .main-content .not-found span {
+  font-size: larger;
+  color: #01034e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.admin-panel .main-content .create-product-nav {
+  width: 100%;
+  height: calc(-moz-fit-content + 8px);
+  height: calc(fit-content + 8px);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 10px 0;
+  color: #01034e;
+}
+.admin-panel .main-content .create-product-nav .icon {
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 1000px;
+  transition: 0.2s ease;
+}
+.admin-panel .main-content .create-product-nav .icon:hover {
+  color: white;
+  background-color: #01034e;
+}
+.admin-panel .main-content form {
+  width: 100%;
+  height: 100%;
+}
+.admin-panel .main-content form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.admin-panel .main-content form div label {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 5px;
+}
+.admin-panel .main-content form div input {
+  font-family: "Rubik", sans-serif;
+  padding: 10px 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1.5px solid #767676;
+  outline-color: #01034e;
+}
+.admin-panel .main-content form div textarea {
+  font-family: "Rubik", sans-serif;
+  resize: none;
+  height: 200px;
+  padding: 10px 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  outline-color: #01034e;
+}
+.admin-panel .main-content form div select {
+  padding: 10px 8px;
+  font-size: 15px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+.admin-panel .main-content form div button {
+  padding: 10px;
+  background-color: #01034e;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  border: 2px solid #01034e;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  font-size: medium;
+}
+.admin-panel .main-content form div button:hover {
+  background-color: transparent;
+  color: #01034e;
+}
+.admin-panel .main-content form div button:active {
+  background-color: #ccc;
+}
+.admin-panel .main-content form div .error {
+  margin-top: 5px;
+  font-family: "Rubik", sans-serif;
+  font-size: small;
+  color: red;
+}
+.admin-panel .main-content form .category div {
+  display: flex;
+  flex-direction: row;
+}
+.admin-panel .main-content form .category div input {
+  width: 3%;
+  background-color: #01034e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 0px 5px 5px 0px;
+}
+.admin-panel .main-content form .category div input:hover {
+  background-color: #001f7f;
+}
+.admin-panel .main-content form .btn {
+  margin-top: 30px;
+}
+.admin-panel .main-content .orders-list {
+  width: 100%;
+  height: 100%;
+}
+.admin-panel .main-content .orders-list h3 {
+  font-family: "Rubik", sans-serif;
+  color: #01034e;
+  padding: 0 10px;
+  margin-bottom: 8px;
+}
+.admin-panel .main-content .orders-list .order {
+  width: 100%;
+  height: calc(-moz-fit-content + 10px);
+  height: calc(fit-content + 10px);
+  border: 2px solid #01034e;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 2px grey;
+  padding: 10px;
+  color: #01034e;
+  display: flex;
+  justify-content: space-between;
+}
+.admin-panel .main-content .orders-list .order .order-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  font-size: medium;
+}
+.admin-panel .main-content .orders-list .order .order-info .orderId {
+  margin: 0px;
+  font-size: large;
+  color: #01034e;
+  font-weight: 600;
+}
+.admin-panel .main-content .orders-list .order .order-info span {
+  margin-bottom: 5px;
+  word-spacing: 0.5px;
+}
+.admin-panel .main-content .orders-list .order .order-info .method {
+  margin-top: 10px;
+  color: green;
+}
+.admin-panel .main-content .orders-list .order .options {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.admin-panel .main-content .orders-list .order .options label {
+  color: #01034e;
+  font-family: "Rubik", sans-serif;
+  margin-right: 5px;
+}
+.admin-panel .main-content .orders-list .order .options select {
+  padding: 8px;
+  border: 1px solid #01034e;
+  color: #01034e;
+  background-color: transparent;
+  border-radius: 4px;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+}
+.admin-panel .main-content .orders-list .order .options .icon {
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  color: red;
+  margin-left: 30px;
+}
+.admin-panel .main-content .orders-list .ordered-products {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  margin-bottom: 40px;
+  overflow-x: auto;
+}
+.admin-panel .main-content .orders-list .ordered-products .product {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #01034e;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-family: "Rubik", sans-serif;
+  box-shadow: 1px 1px 1.5px grey;
+  color: #01034e;
+  font-size: medium;
+  margin-left: 15px;
+}
+.admin-panel .main-content .orders-list .ordered-products .product span {
+  margin-bottom: 5px;
+  word-spacing: 0.5px;
+}
+.admin-panel .main-content .orders-list .ordered-products .product .orderStatus {
+  margin-top: 2px;
+  color: green;
+  font-weight: bold;
+}
+.admin-panel .main-content .orders-list .ordered-products .firstProduct {
+  margin: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .admin-panel {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .admin-panel .sidebar {
+    width: 100%;
+  }
+  .admin-panel .main-content {
+    width: 100%;
+  }
+}/*# sourceMappingURL=dashboard.css.map */

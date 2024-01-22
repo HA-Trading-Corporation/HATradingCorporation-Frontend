@@ -1,0 +1,16 @@
+.product-review-box {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 50px;
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    span {
+      color: grey;
+    }
+  }
+  .review-text {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,18 @@
+.bread-crumb {
+  min-width: 400px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px 30px;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  background-color: rgb(243, 243, 243);
+}
+.bread-crumb .home {
+  color: #01034e;
+  padding: 0 10px;
+}
+.bread-crumb .product-name {
+  color: grey;
+  padding: 0 10px;
+}/*# sourceMappingURL=breadCrumb.css.map */

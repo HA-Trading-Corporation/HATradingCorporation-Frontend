@@ -1,0 +1,603 @@
+.profile {
+  min-width: 400px;
+  width: 100%;
+  min-height: calc(100vh - 20px);
+  display: flex;
+  padding: 30px 20px;
+}
+.profile .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile .sidebar span {
+  font-size: medium;
+  color: #001f7f;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.profile .sidebar .profile-sidebar {
+  height: 95%;
+}
+.profile .sidebar .profile-sidebar aside {
+  width: 250px;
+  height: 100%;
+  background-color: #01034e;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+}
+.profile .sidebar .profile-sidebar aside .link {
+  padding: 0;
+  margin: 0;
+}
+.profile .sidebar .profile-sidebar aside a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 5px;
+}
+.profile .sidebar .profile-sidebar aside .dropdown {
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+.profile .sidebar .profile-sidebar aside .dropdown a {
+  padding: 5px 0;
+  font-size: 15px;
+  color: rgb(216, 215, 215);
+}
+.profile .sidebar .profile-sidebar aside .dropdown a:hover {
+  color: rgb(255, 255, 255);
+}
+.profile .sidebar .profile-sidebar aside .active {
+  color: #20b3dd;
+}
+.profile main {
+  flex: 1;
+  padding: 20px;
+}
+.profile main header {
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.profile main .error {
+  color: red;
+  font-family: "Rubik", sans-serif;
+  font-size: small;
+  margin-top: 2px;
+}
+.profile main .is-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  color: #01034e;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+}
+.profile main .manage-profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile main .manage-profile .profile-info {
+  width: 35%;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.profile main .manage-profile .address-info {
+  width: 64%;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.profile main .manage-profile .address-info .address-not-found {
+  color: red;
+  font-size: small;
+  font-family: "Rubik", sans-serif;
+}
+.profile main .manage-profile div {
+  height: 200px;
+  border: 2px solid #01034e;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  padding: 10px;
+}
+.profile main .manage-profile div:hover {
+  box-shadow: 2px 2px 2px grey;
+}
+.profile main .manage-profile div header {
+  color: black;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.profile main .manage-profile div header span {
+  display: flex;
+  align-items: center;
+}
+.profile main .manage-profile div header span span {
+  margin: 0 10px;
+}
+.profile main .manage-profile div header a {
+  font-size: small;
+  text-decoration: none;
+  color: #1a9cb7;
+}
+.profile main .manage-profile div header a:hover {
+  text-decoration: underline;
+}
+.profile main .manage-profile div ul {
+  list-style: none;
+}
+.profile main .manage-profile div ul li {
+  margin: 5px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: rgb(26, 26, 26);
+}
+.profile main .logout {
+  margin-top: 20px;
+  background-color: #01034e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 13px 17px;
+}
+.profile main .logout:hover {
+  background-color: #001f7f;
+}
+.profile main .logout .logout-icon {
+  margin-right: 3px;
+}
+.profile main .logout span {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+}
+.profile main .admin-panel-button {
+  margin-top: 20px;
+  padding: 13px 17px;
+  margin-left: 20px;
+  background-color: #01034e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.profile main .admin-panel-button:hover {
+  background-color: #001f7f;
+}
+.profile main .admin-panel-button .right-arrow {
+  margin-right: 3px;
+}
+.profile main .admin-panel-button span {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+}
+.profile main .edit .inputs {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile main .edit .inputs div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.profile main .edit .inputs div label {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 5px;
+  font-size: small;
+}
+.profile main .edit .inputs div input {
+  font-family: "Rubik", sans-serif;
+  padding: 13px 9px;
+  border-radius: 5px;
+  border: 1.5px solid #767676;
+  outline-color: #01034e;
+}
+.profile main .edit .inputs .name {
+  margin-left: 0px;
+}
+.profile main .edit .inputs .password {
+  margin: 0;
+  margin-top: 20px;
+}
+.profile main .edit .buttons {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.profile main .edit .buttons span {
+  margin: 5px 0;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: small;
+}
+.profile main .edit .buttons .btn {
+  background-color: #01034e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 13px;
+  font-size: 13px;
+}
+.profile main .edit .buttons .btn:hover {
+  background-color: #001f7f;
+}
+.profile main div .inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile main div .inputs div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+.profile main div .inputs div span {
+  font-family: "Rubik", sans-serif;
+}
+.profile main div .inputs div label {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 5px;
+  font-size: small;
+}
+.profile main div .inputs .name {
+  margin-left: 0px;
+}
+.profile main div .buttons {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.profile main div .buttons span {
+  margin: 5px 0;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: small;
+}
+.profile main div .buttons .btn {
+  background-color: #01034e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 13px;
+  font-size: 13px;
+}
+.profile main div .buttons .btn:hover {
+  background-color: #001f7f;
+}
+.profile main .change-password .inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile main .change-password .inputs div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.profile main .change-password .inputs div label {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 5px;
+  font-size: small;
+}
+.profile main .change-password .inputs div input {
+  font-family: "Rubik", sans-serif;
+  padding: 13px 9px;
+  border-radius: 5px;
+  border: 1.5px solid #767676;
+  outline-color: #01034e;
+}
+.profile main .change-password .inputs .password {
+  margin: 0;
+}
+.profile main .change-password button {
+  margin-top: 40px;
+  background-color: #01034e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 13px;
+  font-size: 13px;
+}
+.profile main .change-password button:hover {
+  background-color: #001f7f;
+}
+.profile .edit-address .edit-address .inputs .full-name {
+  margin: 0;
+}
+.profile .edit-address .edit-address .inputs .city {
+  margin: 0;
+  margin-top: 20px;
+}
+.profile .edit-address .edit-address .inputs .area {
+  margin-top: 20px;
+}
+.profile .edit-address .edit-address .inputs .address {
+  margin-top: 20px;
+}
+.profile .my-wishlist {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile .my-wishlist .wishlist-product {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px grey;
+}
+.profile .my-wishlist .wishlist-product .wishlist-product-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.profile .my-wishlist .wishlist-product .wishlist-product-info .wishlist-product-img {
+  width: 170px;
+  height: 100%;
+}
+.profile .my-wishlist .wishlist-product .wishlist-product-info .wishlist-product-img img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.profile .my-wishlist .wishlist-product .wishlist-product-info .wishlist-product-headers {
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  padding: 10px;
+}
+.profile .my-wishlist .wishlist-product .wishlist-product-info .wishlist-product-headers span {
+  margin: 5px 0;
+}
+.profile .my-wishlist .wishlist-product .wishlist-product-info .wishlist-product-headers .remove {
+  color: red;
+  cursor: pointer;
+}
+.profile .my-orders .order {
+  box-shadow: 1px 1px 5px grey;
+  margin-bottom: 15px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #f5f6f8;
+  border-radius: 5px;
+  padding: 20px;
+}
+.profile .my-orders .order .orderId-status {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.profile .my-orders .order .orderId-status h3 {
+  font-family: "Rubik", sans-serif;
+  color: #01034e;
+}
+.profile .my-orders .order .orderId-status span {
+  color: green;
+  font-family: "Rubik", sans-serif;
+}
+.profile .my-orders .order .ordered-product {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: white;
+}
+.profile .my-orders .order .ordered-product .ordered-product-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.profile .my-orders .order .ordered-product .ordered-product-info .ordered-product-img {
+  width: 170px;
+  height: 100%;
+}
+.profile .my-orders .order .ordered-product .ordered-product-info .ordered-product-img img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.profile .my-orders .order .ordered-product .ordered-product-info .ordered-product-headers {
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  padding: 10px;
+}
+.profile .my-orders .order .ordered-product .ordered-product-info .ordered-product-headers span {
+  margin: 5px 0;
+}
+.profile .my-orders .order .ordered-product .ordered-product-info .ordered-product-headers .review-button {
+  background-color: #01034e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+.profile .my-orders .order .ordered-product .ordered-product-info .ordered-product-headers .review-button:hover {
+  background-color: #001f7f;
+}
+
+.floating-form {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  transition: all 0.3s ease;
+}
+.floating-form.visible {
+  display: block;
+}
+.floating-form form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.floating-form form textarea {
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  resize: vertical; /* Allow vertical resizing of textarea */
+  font-family: "Rubik", sans-serif;
+}
+.floating-form form .error {
+  font-size: small;
+  color: red;
+  margin: 5px 0;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 10px;
+}
+.floating-form form button {
+  background-color: #01034e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 10px;
+}
+.floating-form form button:hover {
+  background-color: #001f7f;
+}
+
+@media only screen and (max-width: 920px) {
+  .profile .sidebar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 675px) {
+  .profile main .manage-profile .profile-info {
+    width: 100%;
+  }
+  .profile main .manage-profile .address-info {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  .profile .edit-profile {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 846px) {
+  .profile header {
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    margin-bottom: -20px;
+  }
+  .profile .edit-profile {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 746px) {
+  .profile .edit-profile .phone {
+    margin-top: 20px;
+    margin-left: 0 !important;
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 513px) {
+  .profile .edit-profile .email {
+    margin-top: 20px;
+    margin-left: 0 !important;
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 738px) {
+  .profile .change-password .new-password {
+    margin-top: 20px;
+    margin-left: 0 !important;
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .profile .change-password .confirm-password {
+    margin-top: 20px;
+    margin-left: 0 !important;
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .profile .edit-address {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 746px) {
+  .profile .edit-address .province {
+    margin-top: 20px;
+    margin-left: 0 !important;
+    margin-right: 60px;
+  }
+  .profile .edit-address .area {
+    margin-left: 0 !important;
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 573px) {
+  .profile .edit-address .address {
+    margin-left: 0 !important;
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 513px) {
+  .profile .edit-address .phone {
+    margin-top: 20px;
+    margin-left: 0 !important;
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .my-orders .orderId-status h3 {
+    font-size: 15px;
+  }
+  .my-orders .orderId-status span {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .my-orders .orderId-status h3 {
+    font-size: 13px;
+  }
+  .my-orders .orderId-status span {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=profile.css.map */

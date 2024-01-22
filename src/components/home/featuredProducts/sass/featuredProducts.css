@@ -1,0 +1,63 @@
+.FeaturedProducts {
+  min-width: 400px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.FeaturedProducts header {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #01034e;
+  border-bottom: 2px solid #01034e;
+  border-radius: 5px;
+}
+.FeaturedProducts header button {
+  font-family: "Rubik", sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid #01034e;
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  color: #01034e;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  color: #01034e;
+}
+.FeaturedProducts header button:hover {
+  background-color: #01034e;
+  color: white;
+}
+.FeaturedProducts .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 570px) {
+  .FeaturedProducts header h1 {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .FeaturedProducts header h1 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .FeaturedProducts header h1 {
+    font-size: 17px;
+  }
+}/*# sourceMappingURL=featuredProducts.css.map */
